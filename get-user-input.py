@@ -33,9 +33,32 @@ def get_pluck_position(string_length):
 
    return pluck_position
 
+def get_pluck_displacement():
+
+   print('Displacement of pluck')
+   pluck_displacement = raw_input('> ')
+
+   try:
+      pluck_displacement = float(pluck_displacement)
+   except ValueError:
+      print('Please enter a number...')
+      get_pluck_displacement()
+
+   return pluck_displacement()
+
+def get_time():
+
+   print('Time elapsed during calculation:')
+   time = raw_input('> ')
+
+   try:
+      time = float(time)
+   except ValueError:
+      print('Please enter a number...')
+      get_time()
 
 ### MAIN ###
-
 string_length = get_length()
-
 pluck_position = get_pluck_position(string_length)
+pluck_displacement = get_pluck_displacement()
+time = get_time()
