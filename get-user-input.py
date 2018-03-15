@@ -37,5 +37,5 @@ def get_pluck_position(string_length):
 ### MAIN ###
 
 string_length = get_length()
-pluck_position = get_pluck_position(string_length)
 
+pluck_position = get_pluck_position(string_length)
